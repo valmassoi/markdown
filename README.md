@@ -1,5 +1,5 @@
 # markdown
-A simple markdown previewing app using `React.js` and DevOps: `Yeoman` + `react-static`
+A simple markdown previewing app using `React.js` and DevOps: `Yeoman` + `generator-react-webpack`
 
 ## Live Demo
 Hosted at https://valmassoi.github.io/markdown/
