@@ -1,0 +1,25 @@
+body {
+  margin-top: 20px;
+  background: #E8E8E8;
+  font-family: Open Sans; }
+
+a {
+  font-size: 12px; }
+  a:link {
+    color: green; }
+  a:hover {
+    color: black; }
+
+#inandout {
+  margin-left: 20px; }
+
+#in {
+  width: 400px;
+  float: left; }
+
+#out {
+  width: 400px;
+  float: left;
+  margin-left: 20px; }
+
+/*# sourceMappingURL=App.css.map */
