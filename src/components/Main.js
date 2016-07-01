@@ -1,8 +1,8 @@
-require('normalize.css/normalize.css');
-require('styles/App.css');
+require('normalize.css/normalize.css')
+require('styles/App.css')
 
-import marked from 'marked';
-import React from 'react';
+import marked from 'marked'
+import React from 'react'
 
 const defaultText = 'Heading\n'
   + '=======\n'
@@ -32,31 +32,31 @@ const defaultText = 'Heading\n'
 
 class AppComponent extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      text: defaultText
-    };
+      text: defaultText,
+    }
   }
 
   changeText(text) {
-    this.setState({text});
+    this.setState({ text })
   }
   handleChange(event) {
-    const text = event.target.value;
-    this.changeText(text); //this.props.changeText(text); removed props because same file?
+    const text = event.target.value
+    this.changeText(text)
   }
 
   render() {
     return (
       <div id="inandout">
-        <textarea defaultValue={this.state.text} onChange={this.handleChange.bind(this)} cols="60" rows ="20" id="in"/>
-        <div dangerouslySetInnerHTML={{__html:marked(this.state.text)}} id="out" />
+        <textarea defaultValue={this.state.text} onChange={this.handleChange.bind(this)} cols="60" rows="20" id="in" />
+        <div dangerouslySetInnerHTML={{ __html: marked(this.state.text) }} id="out" />
       </div>
-    );
+    )
   }
 }
 
 AppComponent.defaultProps = {
-};
+}
 
-export default AppComponent;
+export default AppComponent
